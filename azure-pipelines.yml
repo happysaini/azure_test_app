@@ -21,3 +21,6 @@ steps:
 - task: Bash@3
   inputs:
     filePath: 'script/setup.sh'
+
+- script: 
+    echo This is a test
