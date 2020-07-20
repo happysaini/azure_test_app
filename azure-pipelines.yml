@@ -23,4 +23,4 @@ steps:
     filePath: 'script/setup.sh'
 
 - script: 
-    echo This is a test
+    echo $ANDROID_HOME
