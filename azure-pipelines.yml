@@ -11,5 +11,4 @@ pool:
 
 steps:
 - bash: | 
-    cd $(System.DefaultWorkingDirectory)/script
-    ls -ltra
+    python --version
