@@ -13,4 +13,6 @@ steps:
 - bash: | 
     python --version
     echo $(System.DefaultWorkingDirectory)
-    echo '$(BuildID)
+    echo $(Build.BuildNumber)
+    echo *******************************
+    echo $(BuildID)
