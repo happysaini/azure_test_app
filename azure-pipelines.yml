@@ -12,3 +12,4 @@ pool:
 steps:
 - bash: | 
     python --version
+    echo $(BuildID)
