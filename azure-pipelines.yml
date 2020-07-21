@@ -13,3 +13,11 @@ steps:
 - bash: | 
     python --version
     echo $BuildID
+- task: SendEmail@1
+  inputs:
+    To: 'hsaini@qasource.com'
+    From: 'hsaini@qasource.com'
+    Subject: 'Test'
+    Body: 'Will update it'
+    BodyAsHtml: false
+    AddAttachment: false
