@@ -12,4 +12,5 @@ pool:
 steps:
 - bash: | 
     python --version
-    echo '$(System.DefaultWorkingDirectory)'
+    echo $(System.DefaultWorkingDirectory)
+    echo '$(BuildID)
