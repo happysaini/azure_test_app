@@ -11,5 +11,5 @@ pool:
 
 steps:
 - bash: | 
-    cd $(System.DefaultWorkingDirectory)
+    cd $(System.DefaultWorkingDirectory)/script
     ls -ltra
