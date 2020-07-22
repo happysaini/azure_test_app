@@ -12,6 +12,8 @@ pool:
 steps:
 - bash: | 
     python --version
-    pip3 --version
+    pip3 install argparse
+    pip3 install requests
+    python3 script/slack_notifications.py
     
     
