@@ -12,6 +12,6 @@ pool:
 steps:
 - bash: | 
     python --version
-    brew switch python3
+    brew upgrade python
     python --version
     
