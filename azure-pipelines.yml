@@ -7,12 +7,17 @@ trigger:
 - master
 
 pool:
-  vmImage: 'macOS-10.14'
+  vmImage: 'ubuntu-latest'
 
 steps:
 - bash: | 
     python --version
     echo $(System.DefaultWorkingDirectory)
     echo $(Build.BuildNumber)
-    echo *******************************
-    echo $(BuildID)
+    pip install requests 
+    pip install html2text
+    pip install bs4
+    pip install argparse
+- bash: |
+    python script/slack_notifications.py --html_report_path $(System.DefaultWorkingDirectory)/script/index.html
+    displayName: 'Sending Slack Notification'
