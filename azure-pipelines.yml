@@ -12,5 +12,5 @@ pool:
 steps:
 - bash: | 
     python --version
-    python3 --version
+    python3 script/slack_notifications
     
