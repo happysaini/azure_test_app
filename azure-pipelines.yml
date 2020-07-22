@@ -6,14 +6,12 @@
 trigger:
 - master
 
-parameters:
-- name: EMAIL_PASS
-  type: string
-  default: password
-
 pool:
   vmImage: 'macOS-10.14'
 
 steps:
 - bash: | 
-    echo ${{ parameters.EMAIL_PASS }}
+    python --version
+    brew install python3
+    python --version
+    
